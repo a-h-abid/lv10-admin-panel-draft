@@ -1,0 +1,18 @@
+networks:
+  default:
+    driver: bridge
+
+services:
+
+  app:
+    build:
+      context: ../
+      dockerfile: docker/app/nginx-phpfpm.Dockerfile
+      args:
+        - HTTP_PROXY=${APP_HTTP_PROXY}
+        - HTTPS_PROXY=${APP_HTTPS_PROXY}
+        - NO_PROXY=${APP_NO_PROXY}
+        - TIMEZONE=${APP_TIMEZONE}
+    networks:
+      - default
+    stop_grace_period: 20s

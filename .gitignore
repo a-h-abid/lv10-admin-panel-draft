@@ -1,0 +1,33 @@
+# Packages
+/node_modules
+/vendor
+auth.json
+
+# Cache
+/.phpunit.cache
+.phpunit.result.cache
+
+# Public Files
+/public/build
+/public/hot
+/public/storage
+
+# Storage
+/storage/*.key
+
+# Environments
+.env
+.env.backup
+.env.production
+
+# Vagrant
+Homestead.json
+Homestead.yaml
+
+# Log
+*.log
+
+# IDE
+/.fleet
+/.idea
+/.vscode

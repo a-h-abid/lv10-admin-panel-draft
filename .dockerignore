@@ -1,0 +1,53 @@
+# Git
+.git/
+
+# Packages
+/node_modules
+/vendor
+auth.json
+
+# Laravel
+/bootstrap/cache/*.php
+/bootstrap/ssr
+/database/*.sqlite*
+/storage/
+!/storage/**/.gitignore
+/public/build
+/public/hot
+/public/storage
+/.env*
+
+# Cache Files
+/.phpunit.cache
+.phpunit.result.cache
+.php*cs-fixer.cache
+
+# Log files
+*.log*
+
+# Docker
+/docker/**/Dockerfile
+/docker/**/*.Dockerfile
+/docker/**/docker-compose*.yml
+/docker/.envs
+/docker/*.env*
+/docker/**/.gitignore
+
+# IDE directories and files
+/.fleet
+/.idea
+/.vscode
+/*.code-workspace
+/*.sublime-*
+/.settings/*
+/.editorconfig
+
+# Code Scanning
+/.scannerwork
+
+# Others
+**/.DS_Store
+**/*.cache
+**/*.md
+Homestead.json
+Homestead.yaml
