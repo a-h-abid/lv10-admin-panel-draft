@@ -15,3 +15,4 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import './layout/theme-detector-onload';
 import './layout/theme-toggle';
+import './layout/sidenav-toggle';
