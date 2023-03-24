@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    @component('auth/components/footer')
+    @component('_layout/components/footer')
     @endcomponent
   </div>
 @endsection
