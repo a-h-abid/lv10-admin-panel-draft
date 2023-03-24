@@ -27,7 +27,8 @@
             "Domain\\": "src/",
             "AbdAdmin\\RespondersAbstraction\\": "packages/responders-abstraction/src/",
             "AbdAdmin\\RequestersAbstraction\\": "packages/requesters-abstraction/src/",
-            "AbdAdmin\\SessionAbstraction\\": "packages/session-abstraction/src/"
+            "AbdAdmin\\SessionAbstraction\\": "packages/session-abstraction/src/",
+            "AbdAdmin\\ViewAbstraction\\": "packages/view-abstraction/src/"
         }
     },
     "autoload-dev": {

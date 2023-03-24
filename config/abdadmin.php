@@ -2,6 +2,12 @@
 
 return [
 
+    'layout' => [
+
+        'default-color-scheme' => 'dark',
+
+    ],
+
     'authentication' => [
 
         /**

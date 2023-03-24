@@ -12,9 +12,11 @@ use AbdAdmin\RespondersAbstraction\Laravel\LaravelRedirectResponder;
 use AbdAdmin\RespondersAbstraction\Laravel\LaravelSmartResponder;
 use AbdAdmin\SessionAbstraction\Contracts\Session;
 use AbdAdmin\SessionAbstraction\Laravel\LaravelSession;
+use AbdAdmin\ViewAbstraction\Laravel\LayoutViewComposer;
 use Domain\Auth\Configs\AuthConfiguration;
 use Domain\Auth\Configs\FlowTypeEnum;
 use Domain\Auth\Configs\IdentityEnum;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -33,7 +35,6 @@ class AppServiceProvider extends ServiceProvider
         });
 
         $this->app->bind(Session::class, LaravelSession::class);
-
         $this->app->bind(SmartResponder::class, LaravelSmartResponder::class);
         $this->app->bind(ViewResponder::class, BladeViewResponder::class);
         $this->app->bind(RedirectResponder::class, LaravelRedirectResponder::class);
@@ -45,6 +46,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        View::composer(['_layout/guest', '_layout/main'], LayoutViewComposer::class);
     }
 }
