@@ -14,14 +14,14 @@
           @component('auth/components/login-message')
           @endcomponent
 
-          @component('auth/components/theme-toggle')
+          @component('_layout/components/theme-toggle')
           @endcomponent
         </div>
 
         @if (!empty($flash['error']))
-            <div class="bg-red-500 text-grey-500 dark:bg-red-600 dark:text-gray-900 p-2 border-gray-300 dark:border-gray-600 rounded-lg">
-              {{ $flash['error'] }}
-            </div>
+          <div class="bg-red-500 text-grey-500 dark:bg-red-600 dark:text-gray-900 p-2 border-gray-300 dark:border-gray-600 rounded-lg">
+            {{ $flash['error'] }}
+          </div>
         @endif
 
         <form class="space-y-4 md:space-y-6" method="post" action="{{ route('abdadmin.login:post') }}">
