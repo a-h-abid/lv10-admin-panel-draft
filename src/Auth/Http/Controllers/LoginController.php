@@ -46,7 +46,7 @@ class LoginController
 
             return $this->responder->setData(['message' => $message])
                 ->setStatusCode(401)
-                ->setRedirectToRouteName('admin.login')
+                ->setRedirectToRouteName('abdadmin.login')
                 ->respond();
         }
 

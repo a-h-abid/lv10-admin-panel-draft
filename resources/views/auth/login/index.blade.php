@@ -24,7 +24,7 @@
             </div>
         @endif
 
-        <form class="space-y-4 md:space-y-6" method="post" action="{{ route('admin.login:post') }}">
+        <form class="space-y-4 md:space-y-6" method="post" action="{{ route('abdadmin.login:post') }}">
           @csrf
 
           @component('auth/components/identity/' . $authConfig['identity'])
