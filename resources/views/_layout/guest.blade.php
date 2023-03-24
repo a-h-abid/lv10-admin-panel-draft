@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" class="{{ $defaultColorScheme == 'dark' ? 'dark' : '' }}">
 <head>
   @include('_layout/_head')
 </head>
